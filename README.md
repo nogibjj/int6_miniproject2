@@ -18,6 +18,7 @@ The purpose of this project is to practice using our previous mini-project 1 as 
 * `calc_stats(df)`: calculates summary statistics including mean, meadian, and standard deviation
 * `create_viz(df)`: creates sample plots using the data
 * `create_report(csv)`: generates a pdf report of the data including basic summary stats and plots
+
 These functions are tested in test_main.py. To make sure github actions is working properly, I use a Makefile to test various parts of my code.
 
 ## Preparation
