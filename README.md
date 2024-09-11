@@ -1,4 +1,5 @@
 # int6_miniproject2
+[![CI](https://github.com/nogibjj/int6_miniproject2/actions/workflows/ci.yml/badge.svg)](https://github.com/nogibjj/int6_miniproject2/actions/workflows/ci.yml)
 
 This repo contains work for mini-project 2. It sets up an environment on codespaces and uses Github Actions to run a Makefile for the following: `make install`, `make test`, `make format`, `make lint`. It loads in a dataset (from Kaggle) that contains information on Spotify sound tracks and performs some basic exploratory data analysis.
 
