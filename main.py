@@ -39,7 +39,7 @@ def calc_stats(df):
     stats_df = pd.DataFrame(stats).round(2)
     
     # save as image
-    fig, ax = plt.subplots(figsize=(12, len(stats_df) * 0.4))  # Adjust size as necessary
+    fig, ax = plt.subplots(figsize=(12, len(stats_df) * 0.4))
     ax.axis('tight')
     ax.axis('off')
     # create the table w/ row labels
@@ -55,7 +55,7 @@ def calc_stats(df):
     table.set_fontsize(16)
     table.scale(1.5, 2.5)
     # save figure as image
-    plt.savefig('resources/stats_df.png', bbox_inches='tight', dpi=300)
+    fig.savefig('resources/stats_df.png', bbox_inches='tight', dpi=300)
     plt.close()
     return stats_df
 
@@ -89,7 +89,6 @@ def create_report(csv_file):
     # read data and get info
     df = read_data()
     dataset_name = os.path.basename(csv_file)
-    df_head = df.head()
     num_cols = df.shape[1]
     col_names = df.columns.tolist()
 
